@@ -1,10 +1,15 @@
-my_list = [42,69,322,13,0,99,-5,9,8,7,-6,5]
-k = 0
-while k<len(my_list):
-    if my_list[k] < 0:
-        break
-    elif my_list[k] > 0:
-        print(my_list[k])
-    k += 1
-    if my_list[k] == 0:
+my_list = [42, 69, 322, 13, 0, 99, 9, 8, 7, 5]
+count = 0
+
+while count < len(my_list):
+    num = my_list[count]
+    count += 1
+    if num == 0:
         continue
+    elif num < 0:
+        print(num)
+        break
+    elif count == len(my_list):
+        print(num)
+    else:
+        print(num)
